@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+      <div class="navigation">
+        <h1>HTML Only</h1>
+        <p>Navigation</p>
+        <div class="buttons-wrapper">
+          <ul>
+            <li><a href="#first-paragraph">What is this?</a></li>
+            <li><a href="#second-paragraph">How does this work?</a></li>
+            <li><a href="#third-paragraph">But why?</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="first-paragraph" id="first-paragraph">
+        <h1>What is this?</h1>
+        <p>
+          This page was inspired by a
+          <a href="https://twitter.com/whitep4nth3r/status/1510568114966171649"
+            >tweet from Salma</a
+          >
+          . Pretty HTML only pages are difficult to make well, and accessible.
+          But here we are. I'm trying my best.
+        </p>
+      </div>
+      <hr />
+      <div class="second-paragraph" id="second-paragraph">
+        <h1>How does this work?</h1>
+        <p>
+          The key to a lot of this is leveraging using tables with a
+          <small> role="presentation"</small> attribute to make decorated
+          sections without css. If you view source on the page, you'll see that
+          there are a LOT of tables. The table tag typically is used to display
+          tabular data and should NOT be used as a layout method. However, since
+          I am not allowed to use CSS, I am pretty much exclusively relying on
+          tables for this purpose. The presentation role tells the browser to
+          not expose the table and its tabluar children in the accessibility
+          tree. This will make it easier to navigate for assistive technology.
+        </p>
+        <p></p>
+        <p>
+          I'm also leveraging some deprecated HTML elements from HTML 3.2 that
+          you should never use. In order to be "compliant", I've added the HTML
+          3.2 doctype at the top of the page:<br />
+          <small
+            >&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2
+            Final//EN"&gt;</small
+          >
+          <br />This helps give a hint to the browser that we are going to use
+          some older stuff.
+        </p>
+        <p></p>
+        <p>
+          HOWEVER, I'm also using some newer things such as<small>
+            details/summary, section, main, header,</small
+          >
+          and <small>footer</small>. So I'm just making a mess of my doctype and
+          what I should be actually using!
+        </p>
+      </div>
+      <hr />
+      <div class="third-paragraph" id="third-paragraph">
+        <h1>But Why?</h1>
+        <img src="./assets/why-huh.gif" />
+        <p>
+          I make terrible things. This was an exciting
+          <a href="https://xkcd.com/356/">nerd snipe</a> on a sunday, And I took
+          up the challenge!
+        </p>
+      </div>
+      <hr />
+      <div class="navbar">
+        <p>Created by <a>Alex Riviere</a></p>
+        <p>(One marquee for good measure...)</p>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
